@@ -21,7 +21,7 @@ def show_main_menu():
         quantity,item,price = make_order(user_menu_choice.upper()) #calls a function for adding to the orders
         print(quantity,'x',item)
         order_items.append([quantity,item,price])
-        print('\nDo you want to add more items?')
+        print('Do you want to add more items?')
         choice = input('Press "y" for YES and "n" for NO\n')
         if choice in "Yy":
           continue
@@ -29,6 +29,13 @@ def show_main_menu():
           break
         else:
           print('invalid choice')
+    elif user_menu_choice in 'Cc':
+      if len(order_items) == 0:
+        print("You haven't ordered anything yet")
+      else:
+        close_order(user_menu_choice.upper())
+        order_items = []
+
       
 def make_order(menu_choice):
   user_selection = functions.get_item_number()
