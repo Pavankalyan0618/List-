@@ -43,7 +43,7 @@ def make_order(menu_choice):
   return quantity,functions.get_item_information(item_code)[0],functions.get_item_information(item_code)[1]
 
 def close_order(menu_choice):
-  print('Fnctionality for menu choice ', menu_choice)
+  print('Previous order was removed, select N for new order')
 
 
 
