@@ -15,7 +15,7 @@ def show_main_menu():
       break
     elif user_menu_choice in 'Xx':
       for i in range(len(order_items)):
-        print(order_items[i][0],'x',order_items[i][1],'------',int(order_items[i][2])*int(order_items[i][0]))
+        print(order_items[i][0],'x',order_items[i][1],'----',int(order_items[i][2])*int(order_items[i][0]))
     elif user_menu_choice in 'Nn':
      while True:
         quantity,item,price = make_order(user_menu_choice.upper()) #calls a function for adding to the orders
