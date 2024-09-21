@@ -6,7 +6,6 @@ import data
 def get_item_information(item_code):
   """ this  function that will return the item name and price for a given item code.
     For example, find_menu_item('D2') should return Lemonade, and integer 3 as the result """
-  print(item_code)
   for item in data.menu_items:
     item_number, item_name, item_price = item.split(' ')
     if item_number == item_code:
